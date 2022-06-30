@@ -6,7 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="weather.css">
 </head>
-<body>
+<body onload="getlocation()">
+   
     <div style="display: flex; justify-content: center; margin-top: 20vh;">
         <div>
             <input type="text" placeholder="Location" id="userInput">
@@ -17,13 +18,12 @@
     </div>
     <div style="display: flex; justify-content: center;">
         <section id="data">
-            <div id="temp">Temperature:</div>
+            <div id="temp">Temperature: </div>
             <div id="area"> Location: </div>
             <div id="description"> Weather Type:</div>
             <div id="country">Country</div>
         </section>
     </div>
-    
     
    <script src="./weather.js"></script> 
 </body>
